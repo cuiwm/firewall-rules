@@ -19,6 +19,13 @@ across iptables-nft and legacy environments.
 
 ---
 
+### Quick Install
+
+```sh
+SSH_MODE=public bash <(curl -Ls https://raw.githubusercontent.com/cuiwm/firewall-rules/refs/heads/main/fw-22-80-443-ipset.sh) install
+
+bash <(curl -Ls https://raw.githubusercontent.com/cuiwm/firewall-rules/refs/heads/main/fail2ban-ipset-setup.sh) install
+```
 ### Included Scripts
 
 #### 1. fw-22-80-443-ipset.sh
@@ -170,6 +177,13 @@ when copied or reused independently.
 - 同时兼容 iptables-nft 与 legacy 环境
 
 ------
+### 快速安装 
+
+```sh
+SSH_MODE=public bash <(curl -Ls https://raw.githubusercontent.com/cuiwm/firewall-rules/refs/heads/main/fw-22-80-443-ipset.sh) install
+
+bash <(curl -Ls https://raw.githubusercontent.com/cuiwm/firewall-rules/refs/heads/main/fail2ban-ipset-setup.sh) install
+```
 
 ### 包含脚本
 
