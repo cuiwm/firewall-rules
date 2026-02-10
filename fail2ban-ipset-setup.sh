@@ -426,8 +426,7 @@ EOF
   if [[ "$backend" == "systemd" ]]; then
     # Explicit journalmatch for both unit names (Ubuntu uses ssh.service; others use sshd.service)
     cat >> /etc/fail2ban/jail.d/sshd-ipset.conf <<'EOF'
-journalmatch = _SYSTEMD_UNIT=ssh.service + _COMM=sshd
-journalmatch = _SYSTEMD_UNIT=sshd.service + _COMM=sshd
+journalmatch = _SYSTEMD_UNIT=ssh.service _COMM=sshd + _SYSTEMD_UNIT=sshd.service _COMM=sshd
 EOF
   fi
 
